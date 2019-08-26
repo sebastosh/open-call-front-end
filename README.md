@@ -1,4 +1,8 @@
-View server-side repo [here](https://github.com/sebastosh/open-call-api).
+
+[Live Demo](https://sharp-villani-ed2565.netlify.com/)
+
+
+[View Rails API Repo](https://github.com/sebastosh/open-call-api).
 
 ## Open Call
 
@@ -32,7 +36,7 @@ A marketplace web app allowing artists to submit works for review and selection 
 
 ## Demo
 
-[View live demo here](#coming-soon)
+[Live Demo](https://sharp-villani-ed2565.netlify.com/)
 
 
 
