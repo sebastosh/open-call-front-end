@@ -36,8 +36,8 @@ import React from 'react';
    render() {
     // console.log(this.state)
     return (
-      <div>
-      I am login page
+      <div className="login-signup">
+      Log In
       <form onSubmit={this.handleSubmit}>
         <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
         <input type="password" value={this.state.password} onChange={this.handleChange} name="password" />

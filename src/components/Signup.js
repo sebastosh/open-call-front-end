@@ -1,8 +1,10 @@
 import React from 'react';
 
+
  class Signup extends React.Component {
   state = {
     name: '',
+    email: '',
     password: ''
   }
 
@@ -32,12 +34,15 @@ import React from 'react';
    render() {
     // console.log(this.state)
     return (
+      <div className="login-signup">
       <form onSubmit={this.handleSubmit}>
-        <h1>Sign Up</h1>
+        Sign Up
         <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
-        <input type="text" value={this.state.password} onChange={this.handleChange} name="password" />
+        <input type="email" value={this.state.email} onChange={this.handleChange} name="email" />
+        <input type="password" value={this.state.password} onChange={this.handleChange} name="password" />
         <input type="submit" value="Sign Up!" />
       </form>
+      </div>
     );
   }
 }

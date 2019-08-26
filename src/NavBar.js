@@ -4,12 +4,15 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   return (
     <div className="navbar">
-      <NavLink to="/">Calls</NavLink>
-      <NavLink to="/orgs">Orgs</NavLink>
-      {localStorage.token ? (<div><NavLink to="/signout">Signout</NavLink>
-   <NavLink to="/profile">Profile</NavLink></div>) : (<div><NavLink to="/login">Login</NavLink>
-   <NavLink to="/signup">Signup</NavLink></div>)}
-   
+      <ul>
+      <li><NavLink to="/">Calls</NavLink></li>
+      <li><NavLink to="/orgs">Orgs</NavLink></li>
+       </ul>
+
+      <ul className="nav-right">
+      {localStorage.token ? (<li><NavLink to="/profile">Profile</NavLink></li>) : (<li><NavLink to="/login">Login</NavLink></li>)}
+      {localStorage.token ? (<li><NavLink to="/signout">Signout</NavLink></li>) : (<li><NavLink to="/signup">Signup</NavLink></li>)}
+      </ul>
    
    </div>
   );
